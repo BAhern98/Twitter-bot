@@ -17,7 +17,7 @@ for tweet in tweepu.Cursor(api.search, seach).items(numberTweets):
         tweet.favorite()
         time.sleep(10)
 
-    except tweepy.TweepErrora as e:
+    except tweepy.TweepError as e:
         print(e.reason)
     except StopIteration:
         break
